@@ -1,4 +1,7 @@
+
 import java.util.Scanner;
+
+import static java.lang.System.*;
 
 /**
  * @author Kapil Suryawanshi
@@ -6,15 +9,18 @@ import java.util.Scanner;
  */
 public class OddOrEvenNumber {
 	public static void main(String[] args) {
-		int num= 134;
+		int num;
+		Scanner sc=new Scanner(in);
+		out.println("Enter number : ");
+		num=sc.nextInt();
 
 		if((num&1)==0)
 		{
-			System.out.println(" Number is Even");
+			out.println(num + " is Even number");
 		}
 		else
 		{
-			System.out.println(" Number is Odd");
+			out.println(num + " is Odd number");
 		}
 	}
 }
